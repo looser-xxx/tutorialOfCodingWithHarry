@@ -8,11 +8,23 @@
     <title>Before and after pseudo selector</title>
     <style>
         body
-        {
+         {
             margin: 0;
             padding: 0;
             background-color: black;
             color: white;
+        }
+        header::before
+        {
+            content: "";
+            background: url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
         }
         .navigation
         {
@@ -44,7 +56,7 @@
         }
         h1
         {
-            font-size: 4reem;
+            font-size: 4rem;
         }
     </style>
 </head>
